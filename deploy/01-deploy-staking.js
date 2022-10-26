@@ -16,10 +16,6 @@ async function main() {
 
     const stakingAddress = path.join(__dirname, '../', "stakingAddress.json");
     fs.writeFileSync(stakingAddress, JSON.stringify({address: staking.address}));
-
-    const simple = await staking.simple();
-
-    console.log("Simple => ",simple);
 }
 
 main()
